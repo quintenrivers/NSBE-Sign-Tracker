@@ -3,6 +3,7 @@
 	<head>
 		<!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="mystyle.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
@@ -14,10 +15,29 @@
 
 	<body class='blue lighten-3'>
 		<nav class='blue lighten-3' role='navigation'>
-			<div class='container'><a href='#' class='brand-logo center-align'>NSBE Gator Chapter</a>
+			<div class='nav-wrapper container'><a href='#' class='brand-logo center-align'>NSBE Gator Chapter</a>
 		</nav>
 
 		<div id="map"></div>
+
+		<div class='container'>
+			<!-- Dropdown Button -->
+			<a class='dropdown-trigger btn-large' href='#' data-target='dropdown1'>Choose</a>
+
+  		<!-- Dropdown Structure -->
+  		<ul id='dropdown1' class='dropdown-content'>
+    		<li><a href="#!">one</a></li>
+    		<li><a href="#!">two</a></li>
+    		<li class="divider" tabindex="-1"></li>
+    		<li><a href="#!">three</a></li>
+    		<li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+    		<li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+  		</ul>
+
+			<button class='btn-large'><i class='material-icons right'>add_location</i>Add Sign</button>
+			<button class='btn-large'><i class='material-icons right'></i>Move Sign</button>
+			<button class='btn-large'><i class='material-icons right'></i>Remove</button>
+		</div>
 
 		<script type='text/javascript' src='index.js'></script>
 		<script async defer
