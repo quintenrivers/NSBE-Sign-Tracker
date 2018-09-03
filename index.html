@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="mystyle.css">
+
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 		
@@ -20,23 +24,19 @@
 
 		<div id="map"></div>
 
-		<div class='container'>
-			<!-- Dropdown Button -->
-			<a class='dropdown-trigger btn-large' href='#' data-target='dropdown1'>Choose</a>
+		<div class='container row'>
+			<div class="input-field col s12 m6">
+    		<select id='select'>
+      		<option value="" disabled selected>Choose Sign</option>
+      		<option value="1">Sign 1</option>
+      		<option value="2">Sign 2</option>
+      		<option value="3">Sign 3</option>
+    		</select>
+  		</div>
 
-  		<!-- Dropdown Structure -->
-  		<ul id='dropdown1' class='dropdown-content'>
-    		<li><a href="#!">one</a></li>
-    		<li><a href="#!">two</a></li>
-    		<li class="divider" tabindex="-1"></li>
-    		<li><a href="#!">three</a></li>
-    		<li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-    		<li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-  		</ul>
-
-			<button class='btn-large'><i class='material-icons right'>add_location</i>Add Sign</button>
-			<button class='btn-large'><i class='material-icons right'></i>Move Sign</button>
-			<button class='btn-large'><i class='material-icons right'></i>Remove</button>
+			<button id='add_btn' class='btn-large col s12 m2 waves-effect waves-light orange'>Add</button>
+			<button id='mov_btn' class='btn-large col s12 m2 waves-effect waves-light orange'>Move</button>
+			<button id='rem_btn' class='btn-large col s12 m2 waves-effect waves-light orange'>Remove</button>
 		</div>
 
 		<script type='text/javascript' src='index.js'></script>
